@@ -11,7 +11,7 @@ model = load_model("myModel.h5")
 y_preds = model.predict(test_ds)
 
 
-def plot_predictions(test_ds, y_preds, num_images=5):
+def plot_predictions(test_ds, y_preds, num_images=9):
 
     images, labels = next(iter(test_ds))  
     def get_str_labels(input): 
